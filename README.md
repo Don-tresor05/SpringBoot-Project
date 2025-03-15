@@ -23,3 +23,11 @@ Assignment 📝
 📘 Spring Boot REST API Guide
 🎥 YouTube: Spring Boot REST API Tutorial
 
+
+Objective 🎯
+💡 Implement the Service Layer.
+📤 Handle POST requests using @RequestBody.
+1️⃣1️⃣ Tasks 📝
+🏗️ Create a UserService that handles user data.
+📂 Implement a DTO class for user data (name, email).
+🔄 Test the POST request with Postman.
