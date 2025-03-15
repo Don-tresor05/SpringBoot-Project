@@ -17,8 +17,9 @@ Tasks 🏆
 🛠️ Use Postman to test GET requests.
 
 Assignment 📝
-✅ Modify the HelloController to accept a query parameter (e.g., /hello?name=Emmy should return "Hello, Emmy!").
+✅ Modify the HelloController to accept a query parameter (e.g., /hello?name=Tresor should return "Hello, Tresor!").
 ✅ Push your code to GitHub.
 🔎 Tools & Resources 📚
 📘 Spring Boot REST API Guide
 🎥 YouTube: Spring Boot REST API Tutorial
+
