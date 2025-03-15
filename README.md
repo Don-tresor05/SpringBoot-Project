@@ -31,3 +31,17 @@ Objective 🎯
 🏗️ Create a UserService that handles user data.
 📂 Implement a DTO class for user data (name, email).
 🔄 Test the POST request with Postman.
+
+
+Objective 🎯
+🛢️ Configure a database connection.
+🔄 Implement CRUD (Create, Read, Update, Delete) with Spring Data JPA.
+1️⃣4️⃣ Tasks 🏆
+⚡ Configure application.properties for PostgreSQL/MySQL.
+📦 Create a User entity and a UserRepository.
+🏗️ Implement CRUD operations for Users.
+🛠️ Test endpoints using Postman.
+1️⃣5️⃣ Assignment 📝
+✅ Add an Update user API (PUT method).
+✅ Implement a Delete user API (DELETE method).
+✅ Push your code to GitHub.
