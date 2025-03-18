@@ -48,6 +48,8 @@ This is a Spring-Boot application designed to manage user data. The API performs
 ➖ **Method**: GET
 ➖ **Body**: json
 
+      🔷Response🔷
+
       {
         "id": "Long",
         "name": "String",
