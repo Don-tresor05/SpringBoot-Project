@@ -1,47 +1,87 @@
 # SpringBoot-Project
-Step 1:
-🎯 Install and configure JDK 17+, Maven, and PostgreSQL/MySQL.
-🔧 Create a Spring Boot project using Spring Initializr with:
-🌍 Spring Web
-🔄 Spring Boot DevTools
-🗄️ Spring Data JPA
-🛢️ MySQL Driver
+This is a Spring-Boot application designed to manage user data. The API performs CRUD (Create, Read, Update, Delete) operations and is connected to MySQL database.
 
-Step 2:
-🌍 Learn how to create RESTful APIs using Spring Boot.
-🔧 Understand @RestController, @GetMapping, and @RequestMapping.
+## Features
+➖ API for User Management
+➖ Database Integrarion with MySQL
+➖ Implements CRUD operations
+➖ Easy-to-use endpoints for managing users
 
-Tasks 🏆
-🔨 Create a HelloController that returns "Hello, World!".
-📂 Modify it to return a JSON object with a message and status code.
-🛠️ Use Postman to test GET requests.
+## API Endpoints
 
-Assignment 📝
-✅ Modify the HelloController to accept a query parameter (e.g., /hello?name=Tresor should return "Hello, Tresor!").
-✅ Push your code to GitHub.
-🔎 Tools & Resources 📚
-📘 Spring Boot REST API Guide
-🎥 YouTube: Spring Boot REST API Tutorial
+### 1. @@Create User@@
+➖ **URL**: `http://localhost:8080/api/users`
+➖ **Method**: POST
+➖ **Body**: json
+
+      {
+        "name": "String",
+        "email": "String"
+      }
+
+      🔷Response🔷
+
+      {
+        "id": "Long",
+        "name": "String",
+        "email": "String"
+      }
+
+### 2. @@Get All Users@@
+➖ **URL**: `http://localhost:8080/api/users`
+➖ **Method**: GET
+➖ **Body**: json
+
+      🔷Response🔷
+
+     [    
+      {
+        "id": "Long",
+        "name": "String",
+        "email": "String"
+      }
+      ]
 
 
-Objective 🎯
-💡 Implement the Service Layer.
-📤 Handle POST requests using @RequestBody.
-1️⃣1️⃣ Tasks 📝
-🏗️ Create a UserService that handles user data.
-📂 Implement a DTO class for user data (name, email).
-🔄 Test the POST request with Postman.
+### 3. @@Get User by ID@@
+➖ **URL**: `http://localhost:8080/api/users/{id}`
+➖ **Method**: GET
+➖ **Body**: json
+
+      {
+        "id": "Long",
+        "name": "String",
+        "email": "String"
+      }
+
+### 4. @@Update User@@
+➖ **URL**: `http://localhost:8080/api/users/{id}`
+➖ **Method**: PUT
+➖ **Body**: json
+
+      {
+        "name": "String",
+        "email": "String"
+      }
+
+      🔷Response🔷
+
+     [    
+      {
+        "id": "Long",
+        "name": "String",
+        "email": "String"
+      }
+      ]
+
+### 5. @@Delete@@
+➖ **URL**: `http://localhost:8080/api/users/{id}`
+➖ **Method**: DELETE
 
 
-Objective 🎯
-🛢️ Configure a database connection.
-🔄 Implement CRUD (Create, Read, Update, Delete) with Spring Data JPA.
-1️⃣4️⃣ Tasks 🏆
-⚡ Configure application.properties for PostgreSQL/MySQL.
-📦 Create a User entity and a UserRepository.
-🏗️ Implement CRUD operations for Users.
-🛠️ Test endpoints using Postman.
-1️⃣5️⃣ Assignment 📝
-✅ Add an Update user API (PUT method).
-✅ Implement a Delete user API (DELETE method).
-✅ Push your code to GitHub.
+                 💠💎Tools & Technologies💠💎
+                     🎈 Java 17
+                     🎈 Spring-Boot
+                     🎈 MySQL
+                     🎈 Maven 
+                     🎈 Thunder Client
